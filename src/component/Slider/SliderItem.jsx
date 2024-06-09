@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./SliderComponent.module.css";
-import svg_icon from "../../../images/svg/image_upper.svg";
+import svg_icon from "../../images/svg/image_upper.svg";
 
 const SliderItem = ({ slide, index }) => {
   return (

@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./SliderComponent.module.css";
-import slider_1_img from "../../../images/slider/1.png";
-import slider_2_img from "../../../images/slider/2.png";
-import slider_3_img from "../../../images/slider/3.png";
-import slider_4_img from "../../../images/slider/4.png";
+import slider_1_img from "../../images/slider/1.png";
+import slider_2_img from "../../images/slider/2.png";
+import slider_3_img from "../../images/slider/3.png";
+import slider_4_img from "../../images/slider/4.png";
 
 import SliderItem from "./SliderItem";
 
