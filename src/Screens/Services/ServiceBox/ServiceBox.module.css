@@ -1,0 +1,149 @@
+.service_box{
+    position: relative;
+    border-radius: 1.563rem;
+}
+.service_box:nth-child(even) {
+  background:var(--service-background-1);
+  border-right: 0.125rem dotted var(--app-black);
+  border-left: 0.125rem solid var(--app-white);
+}
+.service_box:nth-child(odd) {
+  background:var(--service-background-2);
+  border-left:  0.125rem dotted var(--app-black);
+  border-right: 0.125rem solid var(--app-white);
+}
+
+.service_box.nextBox{
+    border-bottom: 0.125rem dotted var(--app-black);
+}
+.service_box.rightErase,.service_box .leftErase{
+    position: relative;
+}
+.service_box.rightErase::before{
+    content: "";
+    width: 1.375rem;
+    height: 0.688rem;
+    left: 97.5%;
+    background-color: var(--app-white);
+    position: absolute;
+    top: 98%;
+}
+
+.service_box.leftErase::before{
+    content: "";
+    width: 1.375rem;
+    height: 0.813rem;
+    left: 0%;
+    background-color: var(--app-white);
+    position: absolute;
+    top: 98%;
+}
+
+.service_box .title {
+  position: relative;
+  padding: 0.625rem 0;
+}
+.service_box .title h3 {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 3rem;
+}
+
+.service_box .title_desc {
+  margin-bottom: 1rem;
+}
+.service_box .title_desc p {
+  font-size: 0.938rem;
+  line-height: 1.875rem;
+  margin-bottom: 0;
+}
+
+
+.service_box .line{
+    position: absolute;
+    width: 0.125rem;
+    height: 100%;
+    border: 0.125rem solid transparent;
+    margin-bottom: 2.5rem;
+ 
+}
+.service_box .leftLine{
+    left: calc(0% - 0.125rem);
+}
+.service_box .rightLine{
+    right: calc(0% - 0.125rem);
+}
+.service_box .count{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--app-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -1.5rem;
+    position: relative;
+    top: -1rem;
+    border: 0.125rem solid rgba(0, 81, 151, 1);
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+
+
+/* folder */
+.service_box .folder_body{
+  position: relative;
+}
+
+.service_box .folder_body .icon_box{
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.service_box .folder_body .folder_title{
+  padding-left: 0.313rem;
+}
+.service_box .folder_body .folder_title h5{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.service_box .folder_body .folder_list ul{
+  margin-bottom: 0;
+}
+.service_box .folder_body .folder_list ul li{
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+  font-weight: 500;
+}
+
+
+/* responsiveness */
+@media (max-width : 991px){
+  .service_box.rightErase::before{
+    left: 97%;
+    top: 99.4%;
+  } 
+  .service_box .folder_body .folder_list ul li{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .service_box.leftErase::before{
+    left: 1%;
+    top: 99.4%;
+  }
+}
+
+@media (max-width: 556px) {
+ .service_box.rightErase::before {
+      left: 93% !important;
+      top: 99.4%;
+  }
+  .service_box .title h3{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+    padding: 0.5rem 10px 0;
+  }
+}

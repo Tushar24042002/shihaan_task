@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import FolderComponent from "./component/folder/FolderComponent";
+import Service from "./Screens/Services/Service";
+import SliderComponent from "./component/folder/Slider/SliderComponent";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <React.Fragment>
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12 my-4">
+          <SliderComponent />
+        </div>
+      </div>
     </div>
+    <Service/>
+    </React.Fragment>
   );
 }
 
