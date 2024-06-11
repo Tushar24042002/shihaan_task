@@ -29,7 +29,7 @@
     background-size: cover;
     background-position: center;
     z-index: 3;
-    mask-image: url("../../images/svg/image_upper.svg"); /* Use the SVG as a mask */
+    mask-image: url("../../images/svg/image_upper.svg");
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -45,12 +45,12 @@
     align-items: center;
     flex-direction: column;
     padding: 1.25rem;
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .content {
     position: relative;
-    z-index: 3; /* Ensure it is above the white background */
+    z-index: 3;
     text-align: center;
     color: var(--app-white);
 }
